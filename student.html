@@ -1,0 +1,24 @@
+<?php
+require("./database.php");
+
+if(isset($_POST['submit'])){
+   
+    $stuname = $_POST['sname'];
+    $stuage = $_POST['sage'];
+    $stucontact = $_POST['scontact'];
+    $stuyearlevel = $_POST['syearlevel'];
+    
+     
+    $queryStudentCreate = "INSERT INTO students VALUES (null, '$stuname','$stuage','$stucontact','$stugender')";
+    $sqlStudentCreate = mysqli_query($connection,$queryStudentCreate);
+
+    echo header("Location: sform.php"); 
+    }
+    else{ 
+        echo "data not inserted";
+        echo header("Location: sform.php");
+    }
+
+
+?>
+

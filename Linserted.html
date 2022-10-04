@@ -1,0 +1,28 @@
+<?php
+
+require("./database.php");
+
+
+if(isset($_POST['submit'])){
+   
+    $fname = $_POST['fullname'];
+    $age = $_POST['age'];
+    $contact = $_POST['contact'];
+    $gender = $_POST['gender'];
+    $user = $_POST['username'];
+    $pass = $_POST['password'];     
+     
+    $queryCreate = "INSERT INTO register_form VALUES (null, '$fname','$age','$contact','$gender','$user','$pass')";
+    $sqlCreate = mysqli_query($connection,$queryCreate);
+                
+    echo header("Location: login.php"); 
+    }
+    else{ 
+        echo "first you need to create an account<br>";
+        echo header("Location: Cregister.php");
+    }
+    
+
+
+
+?>

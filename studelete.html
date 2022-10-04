@@ -1,0 +1,19 @@
+<?php
+require("./database.php");
+
+
+if (isset($_POST['delete'])){
+    $deleteStuId = $_POST ['deleteStuId'];
+
+    $queryS_Delete = "DELETE FROM students WHERE Id= $deleteStuId";
+    $sqlS_Delete = mysqli_query($connection,$queryS_Delete);
+    echo header("Location: admin_sform.php");
+}
+else {
+    echo header("Location: admin_sform.php");
+}
+
+
+
+
+?>

@@ -1,0 +1,192 @@
+<?php   
+require("./database.php");
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href ="mycss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*{
+  margin:0;
+  padding:0;
+  font-family:verdana;
+  box-sizing: border-box;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover{
+  background-color:#088;
+}
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+div.emm{
+  width:100%;
+  height:100%;
+  
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+ 
+.pictures{
+  float: top;
+   
+}
+
+.nameheader{
+  float: top;
+}
+
+.home{
+  color: white;
+}
+
+
+
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+body{
+  background-image: url("img/logo.png"); /* The image used */
+  height: 100px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100% 150%;
+  background-attachment: fixed;
+}
+</style>
+
+
+<body>
+<div class="button"> 
+ 
+ 
+
+<div class="navbar">
+  <a href="/project/main.html">back to homepage</a>
+  </div> 
+  
+
+
+
+<div class="nameheader"> 
+<br><br><br>
+ <div class="home">   
+    <h1> PROJECT  PAGE </h1>
+    </div>
+
+
+</div>
+ 
+
+<div class="pictures">
+
+  <div class="column">
+    <img src="img/ml.jpg" alt="Snow" style="width:70%">
+  </div>
+  <!-- <div class="column">
+    <img src="img/iter1.jpg"  style="width:70%">
+  </div> -->
+  <div class="column">
+    <img src="img/covid2.jpg" style="width:70%">
+  </div>
+  <!-- <div class="column">
+    <img src="img/iter2.jpg"  style="width:70%">
+  </div> -->
+  <div class="column">
+    <img src="img/tktok.jpg"  style="width:70%">
+  </div>
+  <div class="column">
+    <img src="img/iter3.jpg" style="width:70%">
+  </div>
+   <div class="column">
+    <img src="img/covid1.jpg"  style="width:70%">
+  </div>
+ 
+</div>
+
+
+ 
+  
+  
+
+
+
+
+
+</body>
+
+</html>
+

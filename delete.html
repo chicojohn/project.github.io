@@ -1,0 +1,20 @@
+<?php
+require("./database.php");
+
+
+if (isset($_POST['delete'])){
+    $deleteId = $_POST ['deleteId'];
+
+    $queryDelete = "DELETE FROM register_form WHERE id= $deleteId";
+    $sqldelete = mysqli_query($connection,$queryDelete);
+    echo header("Location: admin_registered_res.php");
+
+}
+else {
+    echo header("Location: admin_registered_res.php");
+}
+
+
+
+
+?>
